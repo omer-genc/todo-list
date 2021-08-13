@@ -1,0 +1,6 @@
+body {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("../img/rose.jpg") ;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
