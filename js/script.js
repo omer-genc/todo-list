@@ -4,7 +4,7 @@ function addNewElement() {
 
     if (girdi === "") {
         var toast = new bootstrap.Toast(toastLiveExample)
-        toast.value = "bosdeger girilemez"
+        
         toast.show()
 
 
