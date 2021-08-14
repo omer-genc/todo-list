@@ -38,7 +38,7 @@
 
   <div class="container">
     <div class="row">
-      <div class="fs-3 mt-3 p-0 text-danger">
+      <div class="fs-3 mt-3 mb-2 p-0 text-danger border-bottom">
         <b>Yapılacaklar</b>
       </div>
       <div class="todolist p-0">
@@ -46,7 +46,14 @@
         <ul id="yapilacaklar" class="list-group ">
 
           <li class="list-group-item list-group-item-action list-group-item-danger">
-            <input class="form-check-input me-1" type="checkbox"  aria-label="" onchange="move(this)">
+            <input class="form-check-input me-1" type="checkbox" aria-label="" onchange="move(this)">
+            Mangal için alışveriş yap
+            <button type="button" class="btn-close float-end" aria-label="Close" onclick="remove(this)"></button>
+          </li>
+
+          <li class="list-group-item list-group-item-action list-group-item-danger">
+            <input class="form-check-input me-1" type="checkbox" aria-label="" onchange="move(this)">
+            Arda'ya derslerinde yardımcı ol
             <button type="button" class="btn-close float-end" aria-label="Close" onclick="remove(this)"></button>
           </li>
 
@@ -56,22 +63,35 @@
 
     <div class="row">
       <div class="todonelist p-0">
-        <div class="fs-3 mt-3 p-0 text-danger">
+        <div class="fs-3 mt-3 mb-3 p-0 text-danger border-bottom">
           <b>Yapıldı</b>
         </div>
         <div class="todolist p-0">
           <ul id="yapildi" class="list-group ">
 
-            <li class="list-group-item list-group-item-action list-group-item-danger">
-              <input class="form-check-input me-1" type="checkbox"  aria-label="" onchange="move(this)">
-              <button type="button" class="btn-close float-end" aria-label="Close"></button>
-            </li>
+
 
           </ul>
         </div>
       </div>
     </div>
   </div>
+
+
+  
+
+  <div class="position-fixed top-0 end-0 p-3" style="z-index: 11">
+    <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        <strong class="me-auto">Uyarı</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="toast-body">
+        Boş öğe eklenemez 
+      </div>
+    </div>
+  </div>
+
 
 
 
